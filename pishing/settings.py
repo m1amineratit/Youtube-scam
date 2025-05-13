@@ -25,8 +25,15 @@ SECRET_KEY = 'django-insecure-bc#6+-=4(9^30rn60bq2*$5$sum==l3odo8j$%6lqp+qc-04$d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'youtube-scam-production.up.railway.app']
+
+
+CSRF_COOKIE_SECURE = True
+CSRF_TRUSTED_ORIGINS = ['https://youtube-scam-production.up.railway.app']
+
+ACCOUNT_DEFAULT_HTTP_PROTOCOL = 'https'
+SITE_ID =1
 
 # Application definition
 
