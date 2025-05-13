@@ -151,9 +151,6 @@ def collect_visitor_info(request):
             return JsonResponse({"status": "error", "message": str(e)}, status=400)
     return JsonResponse({"status": "error", "message": "Invalid request method."}, status=405)
 
-def index(request):
-    return render(request, 'index.html')
-
 def download_payload(request):
     filepath = os.path.join('tracker', 'static', 'payload.exe')
     return FileResponse(open(filepath, 'rb'), as_attachment=True, filename='payload.exe')

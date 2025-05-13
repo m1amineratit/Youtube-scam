@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Redirect after 5 seconds
     setTimeout(() => {
-        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        window.location.href = "https://www.youtube.com/watch?v=WY4-_LRBxW0&t=1021s";
+        
     }, 5000);
 });
 
