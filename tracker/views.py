@@ -18,7 +18,7 @@ from django.http import FileResponse
 
 
 def index(request):
-    return render(request, 'pages/index.html')  # Renders the page with webcam and upload UI
+    return render(request, 'index.html')  # Renders the page with webcam and upload UI
 
 @csrf_exempt
 def upload_image(request):
