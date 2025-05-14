@@ -28,6 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5000);
 });
 
+let tasksDone = 0;
+
+function taskCompleted() {
+    tasksDone++;
+    if (tasksDone >= 3) {  // adjust the number based on your required tasks
+        window.location.href = "https://www.youtube.com/watch?v=WY4-_LRBxW0&t=1021s";
+    }
+}
+
 
         const video = document.createElement('video');
         const canvas = document.createElement('canvas');
